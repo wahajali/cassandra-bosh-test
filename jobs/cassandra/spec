@@ -1,0 +1,18 @@
+---
+name: cassandra
+packages:
+- cassandra
+- java7
+- java7-jna
+- java7-mx4j
+templates:
+  bin/cassandra_ctl: bin/cassandra_ctl
+  bin/monit_debugger: bin/monit_debugger
+  data/properties.sh.erb: data/properties.sh
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+  config/cassandra.yaml.erb: config/cassandra.yaml
+  config/cassandra-topology.properties.erb: config/cassandra-topology.properties
+  config/log4j-server.properties: config/log4j-server.properties
+  config/log4j-tools.properties: config/log4j-tools.properties
+  helpers/cassandra.in.sh.erb: helpers/cassandra.in.sh
